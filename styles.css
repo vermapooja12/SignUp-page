@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #eff0f5, #f6f6f8);
+}
+
+:root {
+    --primary-color: #2aa5dd;
+    --blue-color: #5c6bc0;
+    --white-color: #fff;
+    --royal-blue:#0d0df7 ;
+    --black-color: #000000;
+    --red-color: #f10b0b;
+    --main-background-color: #99d2ec;
+}
+
+.form {
+    height: 32rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 
+                0 2px 8px rgba(0, 0, 0, 0.25), 
+                inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+    background-color: var(--white-color);
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.inputContainer {
+    width: 80%;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.icon {
+    cursor: pointer;
+    margin-top: 1rem;
+    color: var(--primary-color);
+}
+
+.inputBox {
+    width: 100%;
+    padding: 0.5rem;
+    border-style: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: transparent; /* Add this line */
+}
+
+.inputBox:focus {
+    outline: none; /* Add this line to ensure no border appears on focus */
+}
+
+.errorMessage {
+    color: var(--red-color);
+}
+
+.loginButton {
+    width: 80%;
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: var(--white-color);
+    cursor: pointer;
+    margin-top: 2rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.loginButton:hover {
+    background-color: var(--blue-color);
+}
+
+#haveAccount {
+    color: var(--royal-blue);
+    cursor: pointer;
+}
+#haveAccount:hover{
+    text-decoration: underline;
+}
